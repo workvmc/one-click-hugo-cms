@@ -17,8 +17,17 @@ rel = "alternate"
 isHTML = false
 noUgly = true
 permalinkable = false
+[outputFormats.lvo]
+name = "lvo"
+mediaType = "text/html"
+baseName = "lvo"
+isPlainText = false
+rel = "alternate"
+isHTML = false
+noUgly = true
+permalinkable = false
 [outputs]
-home = ["HTML", "print"]
-page = ["HTML", "print"]
+home = ["HTML", "print", "lvo"]
+page = ["HTML", "print", "lvo"]
 section = ["HTML"]
 
