@@ -1,7 +1,12 @@
 languageCode = "en-us"
 title = "My New Netlify Victor Hugo Site"
-[outputFormats]
-[outputFormats.info]
-mediaType = "text/html"
-isHTML = true
-path = 'info'
+outputFormats:
+  printFormat:
+    name: print
+    mediaType: text/html
+    baseName: print
+    isPlainText: false
+    rel: alternate
+    isHTML: false
+    noUgly: true
+    permalinkable: false
