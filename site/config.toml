@@ -7,8 +7,13 @@ title = "Homepage"
 # See configuration options for more details: 
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
-[outputFormats]
-[outputFormats.info]
-mediaType = "text/html"
-isHTML = true
-path = 'info'
+outputFormats:
+  printFormat:
+    name: print
+    mediaType: text/html
+    baseName: print
+    isPlainText: false
+    rel: alternate
+    isHTML: false
+    noUgly: true
+    permalinkable: false
